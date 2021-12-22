@@ -39,12 +39,12 @@ const Cart = ({ items, removeItem, addItems, ...props }) => {
                                                 <div className='col-2'>
                                                     <div className='d-flex flex-row m-1 p-2' style={{}}>
                                                         <div className='m-1 p-1'> <button className='btn btn-danger btn-number' onClick={() => { removeItem(item) }}>-</button></div>
-                                                        <div className='m-1p-1'><h5>{item.quantity}</h5></div>
+                                                        <div className='m-1 p-1'><h5>{item.quantity}</h5></div>
                                                         <div className='m-1 p-1'><button className='btn btn-danger btn-number' onClick={() => { addItems(item) }}>+</button></div>
                                                     </div>
                                                 </div>
                                                 <div className='col-2'>
-                                                    <h3>${item.price * item.quantity}</h3>
+                                                    <h3 className='m-1 pt-3 '>${item.price * item.quantity}</h3>
                                                 </div>
                                             </div>
                                         </div>
