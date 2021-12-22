@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <Navbar className="header-bg" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src={Logo}
@@ -23,14 +23,14 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home">
+              <Nav.Link href="/">
                 Contact Us
                 <MdOutlineSupportAgent />{" "}
               </Nav.Link>
               <Nav.Link href="/cart">
                 Cart <MdAddShoppingCart />
               </Nav.Link>
-              <Nav.Link href="#link">
+              <Nav.Link href="/">
                 <FaUserAlt /> My Account
               </Nav.Link>
             </Nav>
